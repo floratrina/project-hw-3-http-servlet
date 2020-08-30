@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>SignIn</servlet-name>
-        <servlet-class>authentication.SignIn</servlet-class>
+        <servlet-class>banking.LogInToMyBank</servlet-class>
     </servlet>
 
     <servlet-mapping>

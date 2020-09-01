@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name="LogInToBank", urlPatterns = "login")
+@WebServlet(name="LogIn", urlPatterns = "/login")
 public class LogInToMyBank extends HttpServlet {
 
     //implement initialize method
@@ -56,11 +56,6 @@ public class LogInToMyBank extends HttpServlet {
             printWriter.println("<h1>" + "You are not an authorized user." + "<h1>");
             System.out.println("Servlet called doPost method");
         }
-    }
-
-    @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPut(req, resp);
     }
 
     @Override
